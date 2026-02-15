@@ -6,12 +6,13 @@ function Section({ title, children }) {
       {title
         &&
         <h2
-          style={{
-            marginBottom: 24,
-            fontSize: 48,
-            textAlign: 'center',
-            color: "darkred",
-          }}
+        className='title'
+          // style={{
+          //   marginBottom: 24,
+          //   fontSize: 48,
+          //   textAlign: 'center',
+          //   color: "darkred",
+          // }}
         >
           {title}
         </h2>} 
