@@ -19,6 +19,12 @@
 	padding: 10px;
 	background-color: #ffdb92; /* "year" до 1946 */
 }
+.listItem.last{
+  background-color: #d2fdbd;
+}
+.listItem.last.current{
+  background-color: #b9e0ff;
+}
 
 .textField {
 	font-size: 18px;
@@ -41,6 +47,8 @@
 	background-color: yellow;
 	color: blue;
 }
+
+
 .imageContainer {
 	display: flex;
 	gap: 10px;

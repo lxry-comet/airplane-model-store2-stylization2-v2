@@ -25,7 +25,7 @@ function PlanesList({ items }) {
             // }}
         >
             {items.map(item => 
-                <li className='listItem'
+                <li className={getBgColor(item.info.year).join(' ')}
                     key={item.id}
                     // style={{
                     //     display: "grid",
