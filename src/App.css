@@ -1,4 +1,21 @@
+.lugrasimoBold {
+    font-family: "Lugrasimo", cursive;
+    font-weight: 700;
+    font-style: normal;
+}
+
 .title {
+	margin-bottom: 24px;
+	font-size: 48px;
+	text-align: center;
+	color: darkred;
+}
+.titleLugrasimoBold{
+	/* font-family: "Lugrasimo", cursive;
+  font-weight: 700;
+  font-style: normal; */
+	composes: lugrasimoBold;
+
 	margin-bottom: 24px;
 	font-size: 48px;
 	text-align: center;
@@ -13,18 +30,28 @@
 	gap: 32px;
 	outline: 1px solid red;
 }
+/** backgroundColor: '#d2fdbd', // "year"  1946 - 1999 - last */
+.listItem.last {
+  background-color: #d2fdbd;
+}
+
+/** backgroundColor: '#d6f1ff', // "year" від 2000 - current */
+.listItem.current {
+  background-color: #d6f1ff;
+}
+
 .listItem {
 	display: grid;
 	gap: 12px;
 	padding: 10px;
 	background-color: #ffdb92; /* "year" до 1946 */
 }
-.listItem.last{
+/* .listItem.last{
   background-color: #d2fdbd;
 }
 .listItem.last.current{
   background-color: #b9e0ff;
-}
+} */
 
 .textField {
 	font-size: 18px;

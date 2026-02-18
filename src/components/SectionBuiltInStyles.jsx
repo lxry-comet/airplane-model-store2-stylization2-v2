@@ -6,7 +6,7 @@ function Section({ title, children }) {
       {title
         &&
         <h2
-        className='title'
+        className='titleLugrasimoBold'
           // style={{
           //   marginBottom: 24,
           //   fontSize: 48,

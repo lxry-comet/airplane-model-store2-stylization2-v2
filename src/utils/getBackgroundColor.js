@@ -1,3 +1,4 @@
+import clsx from "clsx";
 // export function getBgColor(year) {
 // let bgColor = '#ffdb92';
 
@@ -7,10 +8,32 @@
 // 	return bgColor;
 // }
 
+// export function getBgColor(year) {
+// 	const arrayClass = ['listItem', 'last', 'current'];
+// 	let bgColor = ['listItem'];
+// 	if(year > 1946) bgColor = ['listItem', 'last'];
+// 	if (year > 1999) bgColor = ['listItem', 'last', 'current'];
+// 	return bgColor;
+// }
+
+//todo: var.1.1 - використання бібліотеки clsx
+// export function getBgColor(year) {
+//     const classNames = clsx(
+//         "item",
+//         year > 1945 && "last",
+//         year > 1999 && "current",
+//     );
+//     console.log("classNames:", classNames); //!
+//     return classNames;
+// };
+//todo: var.2.1 - використання бібліотеки clsx
 export function getBgColor(year) {
-	const arrayClass = ['listItem', 'last', 'current'];
-	let bgColor = ['listItem'];
-	if(year > 1946) bgColor = ['listItem', 'last'];
-	if (year > 1999) bgColor = ['listItem', 'last', 'current'];
-	return bgColor;
-}
+    let classNames = "";
+    if (year < 1946) return classNames = "listItem";
+    classNames = clsx(
+        "listItem",
+        year > 1945 && year < 2000 ? "last" : "current"
+    );
+    console.log("classNames:", classNames); //!
+    return classNames;
+};
