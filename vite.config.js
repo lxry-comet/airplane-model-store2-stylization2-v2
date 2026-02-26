@@ -1,8 +1,14 @@
-import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import path from 'path'
+import { defineConfig } from 'vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react()],
-  base: '/airplane-model-store2-stylization1/', //! <-- ім'я репозиторію
-});
+	plugins: [react()],
+	resolve: {
+		alias: {
+			'@': path.resolve(__dirname, 'src')
+		}
+	},
+	base: '/airplane-model-store2-stylization2-v2/' //! <-- ім'я репозиторію
+})

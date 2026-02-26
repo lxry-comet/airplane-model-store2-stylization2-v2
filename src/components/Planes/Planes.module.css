@@ -1,60 +1,17 @@
-.title {
-	margin-bottom: 24px;
-	font-size: 48px;
-	text-align: center;
-	color: darkred;
-}
-.lugrasimoBold {
-	font-family: 'Lugrasimo', cursive;
-	font-weight: 700;
-	font-style: normal;
-}
 
-.titleLugrasimoBold {
-	font-family: 'Lugrasimo', cursive;
-	font-weight: 700;
-	font-style: normal;
-	margin-bottom: 24px;
-	font-size: 48px;
-	text-align: center;
-	color: darkred;
+:root{
+	
 }
-.item {
-	margin-left: 10px;
-	margin-right: 10px;
-	padding: 10px;
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(445px, 1fr));
-	gap: 32px;
-	outline: 1px solid red;
-}
-/** backgroundColor: '#d2fdbd', // "year"  1946 - 1999 - last */
-.listItem.last {
-	background-color: #d2fdbd;
-}
-
-/** backgroundColor: '#d6f1ff', // "year" від 2000 - current */
-.listItem.current {
-	background-color: #d6f1ff;
-}
-
-.listItem {
-	display: grid;
-	gap: 12px;
-	padding: 10px;
-	background-color: #ffdb92; /* "year" до 1946 */
-}
-/* .listItem.last{
-  background-color: #d2fdbd;
-}
-.listItem.last.current{
-  background-color: #b9e0ff;
-} */
-
 .textField {
 	font-size: 18px;
 	font-weight: 700;
 }
+.icon{
+	margin-bottom: -8px;
+	margin-right: 5px;
+	color: red;
+}
+
 .textFieldValue {
 	font-weight: 400;
 	font-style: italic;
@@ -108,3 +65,4 @@
 	max-width: calc((100% - 10px) / 2);
 	border-radius: 4px;
 }
+

@@ -27,13 +27,22 @@ import clsx from "clsx";
 //     return classNames;
 // };
 //todo: var.2.1 - використання бібліотеки clsx
+// export function getBgColor(year) {
+//     let classNames = "";
+//     if (year < 1946) return classNames = "listItem";
+//     classNames = clsx(
+//         "listItem",
+//         year > 1945 && year < 2000 ? "last" : "current"
+//     );
+//     console.log("classNames:", classNames); //!
+//     return classNames;
+// };
+
+//todo: CSS-модулі 
 export function getBgColor(year) {
-    let classNames = "";
-    if (year < 1946) return classNames = "listItem";
-    classNames = clsx(
-        "listItem",
-        year > 1945 && year < 2000 ? "last" : "current"
-    );
-    console.log("classNames:", classNames); //!
-    return classNames;
+    let className = "listItem";
+    if (year > 1945) className = "last";
+    if (year > 1999) className = "current";
+    console.log("className:", className); //!
+    return className;
 };
