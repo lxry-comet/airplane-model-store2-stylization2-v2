@@ -7,10 +7,14 @@ export function getManufacturingYears(start, end) {
 
   const startDate = parseISO(start);
   let endDate = "";
+  let isOngoing = false;
+
   if (end === "now") {
     endDate = parseISO(format(new Date(), "yyyy-MM-dd'T'HH:mm:ss"))
+    isOngoing = true;
   } else endDate = parseISO(end);
   // console.log("endDate", endDate); //!
   
-  return differenceInYears(endDate, startDate);
+  const years = differenceInYears(endDate, startDate);
+  return isOngoing ? `${years}+` : years;
 };
